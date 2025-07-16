@@ -1,0 +1,18 @@
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f2f3f7;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 64px 0 48px 0;
+}
