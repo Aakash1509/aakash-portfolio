@@ -20,7 +20,7 @@ function HeroSection() {
           Computer Science graduate with hands-on experience in backend, full-stack, and cloud-native development. Skilled in Java, Spring Boot, AWS, and React.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="/resume.pdf" className="inline-block bg-blue-600 text-white px-7 py-3 rounded-full font-semibold shadow hover:bg-blue-700 transition text-lg" download>Download Resume</a>
+          <a href="/Aakash Saraiya - Resume.pdf" className="inline-block bg-blue-600 text-white px-7 py-3 rounded-full font-semibold shadow hover:bg-blue-700 transition text-lg" download>Download Resume</a>
           <a href="#contact" className="inline-block border-2 border-blue-600 text-blue-600 px-7 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition text-lg">Contact Me</a>
         </div>
       </div>
