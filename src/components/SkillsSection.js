@@ -3,19 +3,19 @@ import React from 'react';
 const skills = [
   {
     category: 'Languages & Frameworks',
-    items: ['Java', 'Python', 'C/C++', 'PHP', 'Golang', 'Vert.X', 'Spring Boot', 'Hibernate'],
+    items: ['Java', 'Spring Boot', 'Hibernate', 'Vert.X', 'Python', 'C/C++', 'Golang'],
   },
   {
-    category: 'Web Dev',
-    items: ['HTML', 'CSS', 'JavaScript', 'REST APIs', 'JWT Authentication'],
+    category: 'Database & Cloud',
+    items: ['MySQL', 'PostgreSQL', 'JDBC', 'JPA / Hibernate ORM', 'AWS EC2', 'AWS ECS/ECR', 'AWS S3', 'AWS RDS'],
   },
   {
-    category: 'Databases',
-    items: ['MySQL', 'PostgreSQL', 'JDBC', 'Hibernate ORM'],
+    category: 'APIs & Integration',
+    items: ['REST API', 'Microservices', 'OAuth2', 'JWT', 'ZMQ'],
   },
   {
-    category: 'Tools',
-    items: ['AWS Console', 'Git', 'Postman', 'Linux', 'Maven', 'IntelliJ IDEA', 'VS Code', 'ZMQ'],
+    category: 'DevOps & Tools',
+    items: ['Jenkins', 'Git', 'Maven', 'Linux', 'Grafana', 'Sentry', 'Postman', 'IntelliJ IDEA', 'VS Code'],
   },
 ];
 
@@ -23,13 +23,22 @@ function SkillsSection() {
   return (
     <section className="bg-gray-50 py-16" id="skills">
       <h2 className="text-3xl font-bold text-black text-center mb-12">Skills</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {skills.map((group) => (
-          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border border-gray-200" key={group.category}>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">{group.category}</h3>
+          <div
+            key={group.category}
+            className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 flex flex-col"
+          >
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">{group.category}</h3>
             <div className="flex flex-wrap gap-2">
               {group.items.map((skill) => (
-                <span className="bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm font-medium" key={skill}>{skill}</span>
+                <span
+                  key={skill}
+                  className="bg-blue-50 text-blue-800 border border-blue-100 rounded-full px-3 py-1 text-sm font-medium"
+                >
+                  {skill}
+                </span>
               ))}
             </div>
           </div>
@@ -39,4 +48,4 @@ function SkillsSection() {
   );
 }
 
-export default SkillsSection; 
+export default SkillsSection;
